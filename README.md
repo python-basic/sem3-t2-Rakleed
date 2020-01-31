@@ -76,7 +76,7 @@ def main_3():
 main_2()
 main_3()
 ```
-
+![Result of indepworkinvar2-1](src\programming-indepworkinvar2-1-results.png)
 
 ### [2.2. ](https://repl.it/@Rakleed/programming-indepworkinvar2-2)
 ```python
