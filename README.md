@@ -76,22 +76,51 @@ def main_3():
 main_2()
 main_3()
 ```
-![Result of indepworkinvar2-1](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkinvar2-1-results.png)
+![Result of indepworkinvar2-1](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkinvar2-1-result.png)
 
 ### [2.2. ](https://repl.it/@Rakleed/programming-indepworkinvar2-2)
 ```python
 
 ```
+![Result of indepworkinvar2-2](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkinvar2-2-result.png)
 
-### [2.3. ](https://repl.it/@Rakleed/programming-indepworkinvar2-3)
+### [2.3. Разработайте скрипт с функцией, которая для ряда Фибоначчи (кол-во элементов — 22), возвращает подмножество значений или единственное значение.](https://repl.it/@Rakleed/programming-indepworkinvar2-3)
 ```python
+"""
+    Автор: Моисеенко Павел, группа № 1, подгруппа № 2.
 
+    Задание: разработайте скрипт с функцией, которая для ряда Фибо-
+    наччи, где количество элементов, n = 22, возвращает подмножество 
+    значений или единственное значение (по вариантам). Для нахождения 
+    элемента требуется использовать слайсы. Формирование отчета по 
+    выполнению задания и размещение его в портфолио, персональном 
+    репозитории. 
+
+"""
+
+
+def sample(lst):
+    lst_5 = lst[len(lst) // 4::-2]
+    sum_of_5 = sum(lst_5)
+    lst_10 = lst[1:len(lst) // 2 - 1:2]
+    sum_of_10 = sum(lst_10)
+    return sum_of_5, sum_of_10
+
+
+def main():
+    fib_numbers = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946]
+    print(sample(fib_numbers))
+
+
+main()
 ```
+![Result of indepworkinvar2-3](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkinvar2-3-result.png)
 
 ### [2.4. ](https://repl.it/@Rakleed/programming-indepworkinvar2-4)
 ```python
 
 ```
+![Result of indepworkinvar2-4](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkinvar2-4-result.png)
 
 # Задание 2.4
 
