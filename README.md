@@ -198,7 +198,44 @@ main()
 ### 2.1. Исследование способов проверки программного кода Python на совместимость со стандартом PEP8.
 [Результат.](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkvar2-1-result.pdf)
 
-### [2.2. ]()
+### [2.2. ](https://repl.it/@Rakleed/programming-indepworkvar2-2)
+```python
+
+```
+![Result of indepworkvar2-2](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkvar2-2-result.png)
+
+### [2.3. Переписать лямбда-функцию, генерирующую квадраты чисел из переменной типа list, через генератор списка.](https://repl.it/@Rakleed/programming-indepworkvar2-3)
+```python
+"""
+    Автор: Моисеенко Павел, группа № 1, подгруппа № 2.
+
+    Задание: переписать лямбда-функцию, генерирующую квадраты чисел из
+    переменной типа list, через генератор списка.
+
+"""
+
+import random
 
 
-### [2.3. ]()
+def random_generator(numbers, maximum):
+    random_list = []
+    for i in range(numbers):
+        random_list.append(random.randint(0, maximum))
+    return random_list
+
+
+def main():
+    print("Программа генерирует случайный список элементов, а потом создаёт "
+          "новый список из этих же чисел, возведённых в квадрат.")
+    maximum = int(input("Введите верхнюю границу диапазона случайных "
+                        "чисел: "))
+    numbers = int(input("Введите количество случайных элементов: "))
+    random_items = random_generator(numbers, maximum)
+    print("Список случайно сгенерированных элементов: ", random_items)
+    print("Список этих же элементов, возведённых в квадрат: ",
+          list(map(lambda x: x * x, random_items)))
+
+
+main()
+```
+![Result of indepworkvar2-3](https://github.com/python-basic/sem3-t2-Rakleed/blob/master/src/programming-indepworkvar2-3-result.png)
